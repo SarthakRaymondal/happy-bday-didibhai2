@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy bday</title>
+    <link rel="icon" type="images/jpg" href="image.jpg">
+    <style>
+        .font1 {
+              font-family: "Montserrat", sans-serif;
+              font-optical-sizing: auto;
+              font-weight: 400;
+              font-style: normal;
+        }
+        body {
+            margin: 0;
+            background: rgb(224, 222, 204);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body class="font1">
+    <!--scoreos = ttp1.offsetTop
+        po = window.pageYOffset-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <div style="width: 100%;display: flex;justify-content: center;">
+        <div style="width: 80%;border: 0px solid black;border-radius: 10px;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background: white;">
+            <div style="width: 100%;height: 200px;background:linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0)),url(image.jpg);background-repeat: no-repeat;background-position: center;background-size: cover;border-top-left-radius: 10px;border-top-right-radius: 10px;display: flex;align-items:end;" id="pic1" onmouseover="open1()" onmouseout="close1()"><a style="color: white;margin-left: 5px;font-weight: 900;margin-bottom: 5px;transition: 0.5s;opacity: 0;" id="txt1">Picture of Didibhai</a></div>
+            <div>
+                <br><div style="margin-left: 5px;"><a style="font-size: 30px;font-weight: 900;">Happy birthday Didi Bhai🎉</a></div>
+                <br><div style="margin-left: 5px;margin-right: 5px;text-align: justify;text-justify: inter-word;"><a style="font-size: 15px;font-weight: 900;">Happy birthday Didibhai! Hope ur doing great! Today's a very special day for u. I always enjoyed times with you. U a re very special! And inspired me to do a lot of good things.For this,thank you! So once again a very happy bday!<br><br><span>-Ryan</span><br><br></a></div>
+            </div>
+        </div>
+    </div>
+<script>
+    function open1() {
+        document.getElementById("pic1").style.background = "linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,1)),url(image.jpg)"
+        document.getElementById("pic1").style.backgroundRepeat = "no-repeat"
+        document.getElementById("pic1").style.backgroundSize = "cover"
+        document.getElementById("pic1").style.backgroundPosition = "center";
+        document.getElementById("txt1").style.opacity = 1;
+    }
+    function close1() {
+        document.getElementById("pic1").style.background = "linear-gradient(to bottom,rgba(0,0,0,0), rgba(0,0,0,0)),url(image.jpg)"
+        document.getElementById("pic1").style.backgroundRepeat = "no-repeat"
+        document.getElementById("pic1").style.backgroundSize = "cover"
+        document.getElementById("pic1").style.backgroundPosition = "center";
+        document.getElementById("txt1").style.opacity = 0;
+    }
+</script>
+</body>
+</html>
